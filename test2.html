@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 先设置好外外面父盒子的高度，足以显示一个li */
+    ul{
+      height: 20px;
+      width:80px;
+      /* 超出隐藏 */
+      overflow: hidden;  
+    }
+    /* 设置每一个li的高度 */
+    li{
+      height:20px;
+    }
+    /* 当鼠标放上去的时候，改变父盒子的高度，可以显示全部的li */
+    ul:hover{
+      height:60px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li value="选择品牌">选择品牌</li>
+    <li value="选择品牌1">选择品牌1</li>
+    <li value="选择品牌2">选择品牌2</li>
+    </ul>
+</body>
+</html>
+<script>
+</script>

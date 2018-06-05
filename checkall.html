@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <title> 全选按钮的实现 </title>
+  </head>
+  <body>
+  <div>
+  <input type="checkbox" id="chkAll" onclick="checkAll(this)" />全选
+  </div>
+  <div>
+  <input type="checkbox" name="chk"/>选项1
+  </div>
+  <div>
+  <input type="checkbox" name="chk"/>选项2
+  </div>
+  <div>
+  <input type="checkbox" name="chk"/>选项3
+  </div>
+  <div>
+  <input type="checkbox" name="chk"/>选项4
+  </div>
+  <input type="checkbox" name="chk"/>选项5
+  </div>
+  </body>
+  <script>
+  //全选
+  function checkAll(e)
+  {
+  var t=document.getElementsByName("chk");
+  // alert(t.length);
+  for(var i=0;i<t.length;i++)
+  {
+  t[i].checked=document.getElementById("chkAll").checked;
+  }
+  }
+  </script>
+  </html>

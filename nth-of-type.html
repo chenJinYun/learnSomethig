@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      p:nth-of-type(2){
+        width: 100px;
+        height: 100px;
+        background-color: red
+      }
+      .table:nth-of-type(1) header h3::before{
+        content: '*';
+        display: inline;
+        font-size: 12PX;
+        color: red
+      }
+    </style>
+  </head>
+  <body>
+   <p><span>1111111111111</span></p>
+   <p><span>1111111111111</span></p>
+   <p><span>1111111111111</span></p>
+   <p><span>1111111111111</span></p>
+   <p><span>1111111111111</span></p>
+   <p><span>1111111111111</span></p>
+   <p><span>1111111111111</span></p>
+   <div>
+     <aside>
+       <div>
+          <div class="table"><header><h3>hllow</h3></header></div>
+          <div class="table"><header><h3>hllow</h3></header></div>
+       </div>
+     </aside>
+   </div>
+  </body>
+</html>
+<script>
+  //使用扩展运算符实现将类数组转换成真正的数组
+  // let p = document.getElementsByTagName('p')
+  // let parr = [...p]
+  // console.log(typeof parr)
+  // 把数组一个一个的输出
+  // let a=[1,2,333,4]
+  // console.log(...a)
+  // 获取数组的最小值
+  // console.log(Math.min(...a))
+  // 两个数组连接
+  // let b = [1,2,3,4]
+  // console.log([...a,...b])
+  // 在一个数组里面连接另外一个数组
+  // console.log([1,2,3,...a,...b])
+  // a.push(...b)
+  // console.log(a)
+
+
+
+
+  // async-await
+  // await 可以返回promise等任何值，后一个await依赖前一个await的值
+  // function b () {
+  //   return 123
+  // }
+  // async function aa () {
+  //   let d = 0
+  //   let c = 0
+  //   await  Promise.resolve(setTimeout(function(){d = 100},2000))
+  //   return await c +d
+  // }
+
+  // aa().then(res => {console.log(res)})
+  // console.log(1111)
+
+// map
+let a = [1,2,3,4,5]
+let b = ''
+b= [a.map(item => (item))]
+console.log(b)
+
+</script>

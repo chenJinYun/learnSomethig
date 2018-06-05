@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div{
+      height: 200px;
+      width:10px;
+      color:#ccc
+    }
+    div::before,div::after{
+      content: '';
+      display: inline-block;
+      height: 100px;      
+      margin-left:7px;
+      border-left:1px dashed #ccc ;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div>or</div> -->
+    <form action="http://localhost:8080/signin" method="post">
+      <p>Name: <input name="name" value="koa"></p>
+      <p>Password: <input name="password" type="password"></p>
+      <p><input type="submit" value="Submit"></p>
+  </form>
+</body>
+</html>
+<script>
+  // console.log(Boolean({}))
+  let a=[{id:1,e:2},{id:2,b:3}]
+  let v=[{id:1,e:3},{id:4,g:8}]
+  // 得到
+  c = [{id:1,e:3},{id:4,g:8},{id:2,b:3}]
+  console.log(c)
+  
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+   function removeAllSpace(str) {
+     return str.replace(/\s{1,}/g, "");
+    }
+  //  console.log(removeAllSpace('1234      dssfgfhj retyuiu'))
+   let ss = /c/i
+  //  console.log(('abcdddddd'.search(ss)))
+  //  []  查找这个范围内的
+  // +至少一个
+  // *任意多
+  // ？1或者0
+  // \w 字母
+  // \d数字
+  // {}个数的范围
+  let num = /\w{5,}/
+  console.log(num.test('0hudxxui'))
+</script>
